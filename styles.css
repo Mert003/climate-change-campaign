@@ -57,7 +57,6 @@ color: #fff;
 text-shadow: 3px 1px 3px rgba(0,0,0,1);
 }
 
-/* Hero class */
 
 .hero {
     position: relative;
@@ -149,7 +148,6 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     transform: rotate(-45deg);
     top:-50px;
     left: -50px;
-   /* text-shadow: 10px 10px 10px #fff;*/
    text-decoration: underline;
     color: #333;
     font-size: 50px;
@@ -306,8 +304,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       
       font-size: large;
        
-      /*background-color:rgba(79, 45, 127, 0.2);
-      background-color:  #ADD8E6;*/
+     
       background: linear-gradient(rgba(64, 0, 133, 0.5), rgba(135, 206, 235, 0.5) 50%);
 
       
