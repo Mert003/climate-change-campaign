@@ -297,22 +297,22 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       padding: 1.5%;
       box-sizing: border-box;
       
-      height: fit-content;
-      min-height: 600px;
+     
       
       text-align: center;
       
       font-size: large;
        
      
-      background: linear-gradient(rgba(64, 0, 133, 0.5), rgba(135, 206, 235, 0.5) 50%);
-
+      background: linear-gradient( #85C4EA , #fff );
+    flex: 1;
       
     }
     .corporation-container img{
       object-fit: cover;
       object-position: center;
       width: 50%;
+      flex: 1;
     
     }
     .corporation-texts h1{
@@ -336,7 +336,10 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
        .corporation-container{
         flex-direction: column-reverse;
        }
-       
+       .corporation-container img{
+        width: 80%;
+        margin: 0 auto;
+       }
     }
   
 
@@ -374,13 +377,15 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     }
 
     /* solutions class */
-
+ .solutionsh1{
+  text-align: center;
+ }
   .solutionsContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-    padding: 4%;
+   
+    padding: 10px;
     box-sizing: border-box;
   }
   .solutionsContainer img{
@@ -389,16 +394,18 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     object-position: center;
     margin: 0;
     height: fit-content;
-  
+  flex: 1;
   }
   .solutionsElements{
    width: 50%;
    margin-left: 20px;
    padding: 0;
+   display: flex;
+   flex: 1;
+   align-items: center;
+    
   }
-  .solutionsElements h1{
-    margin: 0px 25px;
-   }
+ 
   .solutionsElements ul{
     margin: 0;
     padding: 0;
@@ -407,17 +414,22 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     height: auto;  
     display: flex;
     flex-direction: column;
+    height: 100%;
+   
   }
   .solutionsElements ul li{
     margin-left: 0;
     flex: 1;
+    display: flex;
     align-items: center;
+    text-align: center;
     height: 100px;
     padding-left: 10px;
     padding-top:10px ;
     font-size: 25px;
     font-family: 'Open-Sans' , sans-serif;
-    border: 1px solid #d3d3d3;
+    border-bottom: 3px solid #d3d3d3;
+    
   }
  
   @media screen and (max-width:1300px) {
