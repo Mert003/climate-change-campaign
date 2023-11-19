@@ -158,7 +158,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
   }
   .impactsElements img{
     width: 100%;
-    height: 250px;
+    height: 20rem;
     border-radius: 25px;
     object-fit: cover;
     object-position: center;
@@ -177,12 +177,12 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       align-items: center;
     }
     .impactsElements{
-      width: 80%;
-      margin-bottom: 50px;
+      width: 90%;
+      margin-bottom: 15px;
     }
     .impactsElements img{
-      width: 80%;
-      height: 400px;
+      width: 100%;
+      height: 25rem;
     }
     .impactsElements h2{
       top:-50px;
@@ -252,9 +252,14 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       
       color: rgba(255, 255, 255, .5); 
       background-color: rgba(0,0,0,0.3);
-      font-size: 4rem ;
+      font-size: 5rem ;
       text-decoration: none;
       cursor: pointer;
+      margin: 0;
+      padding: 0;
+     
+      display: flex;
+      align-items: center;
     }
     .carousel-texts{
       position: absolute;
@@ -268,9 +273,15 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     }
     .carousel-control.prev{
       left: 5px;
+      width: fit-content;
+      height: fit-content;
     }
+   
     .carousel-control.next{
       right: 5px;
+      width: fit-content;
+      height: fit-content;
+      padding: 0;
     }
 
   @media screen and (max-width:998px) {
@@ -341,7 +352,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
         flex-direction: column-reverse;
        }
        .corporation-container img{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
        }
     }
@@ -377,6 +388,13 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       font-weight: 500;
       
       margin: 0;
+      
+    }
+    @media screen and (max-width:998px) {
+      .socialJustice-container p{
+        font-size: medium;
+        line-height: 2rem;
+      }
       
     }
 
@@ -429,8 +447,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     align-items: center;
     text-align: center;
     height: 100px;
-    padding-left: 10px;
-    padding-top:10px ;
+    
     font-size: 25px;
     font-family: 'Open-Sans' , sans-serif;
     border-bottom: 3px solid #d3d3d3;
@@ -458,9 +475,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
       
     }
     
-    .solutionsElements ul li i{
-     margin-top: auto;
-    }
+  
     
     .solutionsElements ul li:nth-child(2n){
       background-color:  #ADD8E6;
