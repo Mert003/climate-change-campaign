@@ -403,9 +403,13 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     height: auto;
     list-style-type: none;  
     height: auto;  
+    display: flex;
+    flex-direction: column;
   }
   .solutionsElements ul li{
     margin-left: 0;
+    flex: 1;
+    align-items: center;
     height: 100px;
     padding-left: 10px;
     padding-top:10px ;
@@ -432,6 +436,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     .solutionsElements ul li{
       width: 100%;
       font-size: medium;
+      
     }
     
     .solutionsElements ul li i{
