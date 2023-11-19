@@ -436,21 +436,29 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     list-style-type: none;  
     height: auto;  
     display: flex;
+
     flex-direction: column;
     height: 100%;
    
+   
   }
   .solutionsElements ul li{
-    margin-left: 0;
-    flex: 1;
+   
+    
     display: flex;
     align-items: center;
     text-align: center;
-    height: 100px;
     
+    flex: 1;
     font-size: 25px;
     font-family: 'Open-Sans' , sans-serif;
     border-bottom: 3px solid #d3d3d3;
+    
+  }
+  .solutionsElements ul li span{
+   
+    width: 100%;
+
     
   }
  
@@ -462,7 +470,7 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     .solutionsElements{
       width: 95%;
       font-size: medium;
-      
+      height: 30rem;
       margin: 0 auto;
     }
     .solutionsElements h1{
@@ -472,11 +480,13 @@ text-shadow: 3px 1px 3px rgba(0,0,0,1);
     .solutionsElements ul li{
       width: 100%;
       font-size: medium;
-      
+     
     }
     
-  
-    
+    .solutionsElements ul {
+      width: 100%;
+     
+    }    
     .solutionsElements ul li:nth-child(2n){
       background-color:  #ADD8E6;
      }
