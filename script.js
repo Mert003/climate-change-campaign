@@ -70,3 +70,74 @@ updateTextBasedOnWidth();
 
 // Add an event listener to update the text whenever the window is resized
 window.addEventListener("resize", updateTextBasedOnWidth);
+
+//
+
+function smoothScroll(target, duration) {
+  var target = document.querySelector(target);
+  var targetPosition = target.getBoundingClientRect().top;
+
+
+
+  var startPosition = window.pageYOffset;
+
+
+  var distance = (targetPosition+startPosition) - startPosition;
+  var startTime = null;
+
+  function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      var timeElapsed = currentTime - startTime;
+      var run = easing(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function easing(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 *t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+var home = document.querySelector('#home');
+var impacts = document.querySelector('#impacts');
+var renewable = document.querySelector('#renewable');
+var corporations = document.querySelector('#corporations');
+var social = document.querySelector('#social');
+var solutions = document.querySelector('#solutions');
+
+var homeLink = document.querySelector('nav ul a[href="#home"]');
+var impactsLink = document.querySelector('nav ul a[href="#impacts"]');
+var renewableLink = document.querySelector('nav ul a[href="#renewable"]');
+var corporationsLink = document.querySelector('nav ul a[href="#corporations"]');
+var socialLink = document.querySelector('nav ul a[href="#social"]');
+var solutionsLink = document.querySelector('nav ul a[href="#solutions"]');
+
+homeLink.addEventListener('click', function() {
+  smoothScroll('#home', 1000);
+});
+
+impactsLink.addEventListener('click', function() {
+  smoothScroll('#impacts', 1000);
+});
+
+renewableLink.addEventListener('click', function() {
+  smoothScroll('#renewable', 1000);
+});
+
+corporationsLink.addEventListener('click', function() {
+  smoothScroll('#corporations', 1000);
+});
+
+socialLink.addEventListener('click', function() {
+  smoothScroll('#social', 1000);
+});
+
+solutionsLink.addEventListener('click', function() {
+  smoothScroll('#solutions', 1000);
+});
+
