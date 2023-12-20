@@ -7,7 +7,7 @@
   <title>Save Our Polar Ice Caps</title>
   
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 
   
 </head>
@@ -16,17 +16,20 @@
   <!--This is Navbar component -->
   <nav>
     <ul>
-     <a href="#"> <li>IMPACTS</li></a>
-     <a href="#"><li>SOLUTIONS</li></a>
+    <a href="#home"> <li>HOME</li></a>
+     <a href="#impacts"> <li>IMPACTS</li></a>
+     <a href="#renewable"><li>RENEWABLE ENERGY</li></a>
+     <a href="#corporations"><li>CORPORATIONS</li></a>
    
-     <a href="#"><li>RENEWABLE ENERGY</li></a>
-     <a href="#"><li>CORPORATIONS</li></a>
-     <a href="#"><li>SOCIAL JUSTICE</li></a>
+     <a href="#social"><li>SOCIAL JUSTICE</li></a>
+     <a href="#solutions"><li>SOLUTIONS</li></a>
+   
+    
     </ul>
   </nav>
 
   <!--This is the Hero component  -->
-  <header class="hero">    
+  <header class="hero" id="home">    
     <div class="hero-text">
       <h1>Save Our Polar Ice Caps</h1>
       <p>Join the fight against climate change and help protect our planet's polar ice caps. Together, we can make a difference.</p>
@@ -36,7 +39,7 @@
   </header>
 
   <!--Impacts on our world -->
-  <h1 class="impactsHeader">Melting Ice Caps Impacts on Our World</h1>
+  <h1 class="impactsHeader" id="impacts">Melting Ice Caps Impacts on Our World</h1>
   <div class="impactsContainer">
   
     <div class="impactsElements">
@@ -64,9 +67,9 @@
 
     <!--Carousel -->
 
-    <h1 id="h1Renewable">Why Renewable Energy Is Important?</h1>
+    <h1 class="h1Renewable" id="renewable">Why Renewable Energy Is Important?</h1>
 
-    <div class="carousel">
+    <div class="carousel" >
  
 
       <div class="carousel-inner">      
@@ -130,23 +133,26 @@
 
       <!-- Corparations  -->
 
-    <div class="corporation-container">
+    <div class="corporation-container" id="corporations">
+
+      <div class="inner-corporation-contanier">
       <div class="corporation-texts">
         <h1>The Role of Businesses And Corporations</h1>
         <p>Businesses and corporations have a crucial role to play in addressing climate change. They can reduce their own <span style="font-weight: bold;">greenhouse gas emissions</span> through sustainable practices, drive innovation in clean technologies, and set ambitious sustainability goals. By collaborating and advocating for change, businesses can influence policies and regulations to create a supportive environment for climate action. Investing in renewable energy, managing sustainable supply chains, and engaging stakeholders can further contribute to mitigating climate change and promoting a more sustainable future.</p>
       </div>
       <img src="images/corporation.jpg" />
+    </div>
 
     </div>
 
     <!--Social Justice-->
 
-    <div class="socialJustice-container">
+    <div class="socialJustice-container" id="social">
       <p>Climate change has unfair consequences for marginalized communities, worsening social inequalities and limiting access to resources, health, and opportunities. Low-income communities and people of color often bear the heaviest burdens, heightening existing injustices. Achieving climate justice requires acknowledging and addressing these unequal impacts, working towards equitable solutions, and empowering all communities, particularly those most affected, to create a more just and sustainable future.</p>
     </div>
 
     <!--Solutions -->
-    <h1 class="solutionsh1">How We Can Save Our Ice Caps</h1>
+    <h1 class="solutionsh1" id="solutions">How We Can Save Our Ice Caps</h1>
    <div class="solutionsContainer">
 
     <img src="images/solutions.jpg" />
@@ -171,7 +177,7 @@
 
     <footer>
 
-      <div class="container">
+      <div class="footer-container">
 
         <div class="footer-firstColumn">
 
@@ -234,7 +240,6 @@
 
     </footer>
     
-
 
 
 
